@@ -1,17 +1,19 @@
-# FNFsupport Plugin für Modmail.dev
+# Modmail Dev CloseRequest Plugin
 
-Dieses Plugin fügt dem Modmail.dev Bot den Befehl `.closerequest` hinzu.
+This plugin adds a `.closerequest` command to the Modmail.dev bot.
 
-## Funktionen
-- `.closerequest *reason*`: Sendet eine Anfrage zum Schließen des Tickets an den User.
-- Der User kann über Buttons (`Accept` / `Decline`) entscheiden.
-- Wenn der User innerhalb von 6 Stunden nicht reagiert, wird das Ticket automatisch geschlossen.
-- Alle Nachrichten werden als Embeds gesendet.
-- Beim Schließen wird die Begründung automatisch in den Log-Channel gesendet.
+## Features
+- `.closerequest *reason*`: Sends a request to close the ticket directly to the user via DM.
+- The user can decide via buttons (`Accept` / `Decline`).
+- If the user accepts, the ticket is automatically closed.
+- If the user declines, the ticket remains open and the auto-close timer is stopped.
+- If the user does not react within 6 hours, the ticket is automatically closed.
+- All messages are sent as Embeds.
+- When closed, the reason is automatically sent to the specified log channel.
 
 ## Installation
-Verwenden Sie den folgenden Befehl in Ihrem Modmail-Server:
+Use the following command in your Modmail server:
 ```
-?plugin add breadybread123/FNFsupport-plugin/FNFsupport
+?plugin add breadybread123/modmail-dev-closerequest/FNFsupport
 ```
-*(Ersetzen Sie `?` durch Ihren Bot-Präfix)*
+*(Replace `?` with your bot's prefix)*
